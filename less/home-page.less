@@ -1,11 +1,12 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Shrikhand', cursive;;
+@sea-water: #4553ff;
+
+.twins {
+    width: 420px;
+    height: auto;
 }
 
-.navigation {
+
+navigation {
     padding-top: 30px;
     padding-bottom: 30px;
     position: absolute;
@@ -48,20 +49,20 @@ body {
     transform-origin: 0;
     position: absolute;
     top: 0;
-}
+
 
 .block span {
     height: 190px;
     position: absolute;
-}
+
 
 .block span:nth-child(1) {
     width: 33.3%;
     width: calc(100% / 3);
     left: -16.66666%;
     left: calc(calc(calc(100% /3) / 2) * -1);
-    background: #53f;
-}
+    background: @sea-water;
+
 
 .block span:nth-child(2) {
     width: 33.33333%;
@@ -70,8 +71,8 @@ body {
     left: 16.66666%;
     left: calc(calc(100% / 3) / 2);
     right: auto;
-    background: #4553ff;
-}
+    background: @sea-water;
+
 
 .block span:nth-child(3) {
     width: 33.33333%;
@@ -80,13 +81,18 @@ body {
     left: calc(calc(calc(100% /3) / 2) + calc(100% / 3));
     bottom: auto;
     background: #4f40ff;
-}
+
 
 .block span:nth-child(4) {
     width: 33.33333%;
     width: calc(100% / 3);
     bottom: 0;
     background: #1fa2ff;
+}
+}
+}
+}
+}
 }
 
 .text {
@@ -104,7 +110,7 @@ body {
 .text h1 {
     font-size: 40px;
     opacity: 2;
-    color: #4553ff;
+    color: @sea-water;
 }
 
 
@@ -150,15 +156,13 @@ body {
 
 
 .img-wrapper-tablet img {
-    width: 420px;
-    height: auto;
+    .twins;
 }
 
 
 
 .img-wrapper-phone img {
-    width: 420px;
-    height: auto;
+    .twins;
 }
 
 
